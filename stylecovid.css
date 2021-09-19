@@ -1,0 +1,150 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+.head h1{
+    font-size: 3rem;
+}
+
+.row{ margin: 0!important; }
+
+.nav_style{
+    height: 10vh;
+}
+
+.main_header{
+    margin-top: -4%;
+    height: 450px;
+}
+
+.eksath_anime img {
+    animation: heartbeat 5s linear infinite
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(.75);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(.75);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(.75);
+    }
+
+    100% {
+        transform: scale(.75);
+    }
+}
+
+.corona_anime img{ animation: coronamove 3s linear infinite}
+
+@keyframes coronamove{ 
+	0% { transform: rotate(0); }
+	100% { transform: rotate(360deg); }
+ }
+
+ .about_section{
+     background-color:#f1f0f1;  
+     /* #d2fdf    */
+ }
+
+ .about_section button{
+
+     margin: 28px 0px 5px 210px;
+ }
+
+ .flex-box-contact {
+    display: flex;
+    justify-content: space-around;
+  }
+
+.contact {
+    width: 50%;
+    font-family: "Ubuntu";
+    font-size: 15px;
+    text-align: center;
+    line-height: 45px;
+    padding: 45px;
+}    
+  
+.contact i {
+    color: black;
+  }
+
+.forms input {
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    
+}
+  
+.forms input:hover {
+    border: 2px solid #0d6efd;
+    border-collapse: collapse;
+  }
+
+  #phone:hover{
+    color:#0d6efd;
+  }
+
+  #mail:hover{
+      color: #0d6efd;
+  }
+
+  #fb:hover {
+    color: blue;
+  }
+  
+  #utube:hover {
+    color: red;
+  }
+  
+  #tweet:hover {
+    color: rgb(0, 114, 185);
+  }
+
+  #news:hover{
+      color:green;
+  }
+  
+
+  .form-group{
+      margin-bottom: 4%;
+  }
+
+  .custom-control-input{
+      padding: 100px;
+      margin: 10px;
+  }
+
+@media(max-width: 780px)
+{ .main_header{ height: 700px; text-align: center; }
+
+	.main_header h1{     
+	text-align: center;
+    padding: 0;
+    width: 100%;
+    font-size: 30px; }
+}
+
+#footer{
+    background-color: #0d6efd;
+}
