@@ -125,6 +125,9 @@ html {
       color:green;
   }
   
+  #github:hover{
+       color:grey;
+  }
 
   .form-group{
       margin-bottom: 4%;
@@ -147,4 +150,8 @@ html {
 
 #footer{
     background-color: #0d6efd;
+}
+
+#footer a:visited{
+     color:black;
 }
