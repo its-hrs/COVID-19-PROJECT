@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>COVID-19</title>
 
-    <link rel="icon" href="./img/tabcorona.png" type="image/x-icon type">
+    <link rel="icon" href="/img/tabcorona.png" type="image/x-icon type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="stylecovid.css">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
@@ -14,41 +15,41 @@
   </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary nav_style">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="https://covid19.who.int/" target="_blank">COVID-19</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <nav class="navbar  navbar-expand-lg p-3 navbar-dark nav_style">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://covid19.who.int/" target="_blank"><b>COVID-19</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item active">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#symptoms">Symptoms</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#prevention">Preventions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Form19.html" target="_blank">Help</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto pr-5 text-capitalize ">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#symptoms">Symptoms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#prevention">Preventions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Form19.html" target="_blank">Help</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>  
 
       <!-- ******************* Header starts *********************** -->
 
@@ -88,11 +89,12 @@
             
           </div>
         </div>
-        <div class="btn-group text abt_btn" role="group" aria-label="Basic outlined example">
+         <div class="btn-group text abt_btn col-lg-6  col-md-6 col-6" role="group" aria-label="Basic outlined example">
           <a href="https://covid19.who.int/" target="_blank"><button type="button" class="btn btn-outline-primary">More About Covid</button></a>
           <a href="https://www.unicef.org/coronavirus/covid-19" target="_blank"><button type="button" class="btn btn-outline-primary">Covid Info Center</button></a>
           <a href="https://help.unicef.org/in/join-greta-fight-coronavirus" target="_blank"><button type="button" class="btn btn-outline-primary">Donate / Help </button></a>
         </div>
+        
       </div>
 
      
@@ -331,58 +333,64 @@
 
       <!-- ******************* Prevention Page Ends *********************** -->
 
-      <!-- ******************* Contact Page Starts *********************** -->
+       <!-- ******************* Contact Page Starts *********************** -->
 
-      <div class="container-fluid pt-5 pb-5" id="contact"> 
-        <!-- style="background-color: #84ceeb;" -->
-        <div class="section_header text-center mb-5 mt-4">
-          <h1 style="font-weight: bold;">Contact US: </h1>
-        </div>
+ <div class="container-fluid pt-5 pb-5" id="contact"> 
+  <!-- style="background-color: #84ceeb;" -->
+  <div class="section_header text-center mb-5 mt-4">
+    <h1 style="font-weight: bold;">Contact US: </h1>
+  </div>
 
-      <div class="container5 flex-box-contact container-fluid sub_section pt-5 pb-5" style="margin-top: -5%;">
-        <div class="contact" >
-          <h1>Get In Touch:</h1>
-          <p>You only live once, but if you do it right, once is enough. Please be safe and don't panic at all and listen to facts not rumours and get vaccinated ASAP.<br> We can and we will. </p>
-          <address>Together We'll Fight, Together We'll Win</address>
-        <a href="mailto: ncov2019@gov.in"  target="_blank"><i style="padding: 8px;" class="fas fa-paper-plane fa-lg" id="mail"></i>ncov2019@gov.in</a><br />
-        <i class="fas fa-phone-alt fa-lg" id="phone"></i> Helpline Number: +91-11-23978046<br />
-        <i class="fas fa-phone-alt fa-lg" id="phone"></i> Toll Free: 1075<br />
+<div class="container5 flex-box-contact container-fluid sub_section pt-5 pb-5" style="margin-top: -5%;">
+  <div class="contact col-lg-6  col-md-5 col-5" >
+    <h1>Get In Touch:</h1>
+    <p>You only live once, but if you do it right, once is enough. Please be safe and don't panic at all and listen to facts not rumours and get vaccinated ASAP.<br> We can and we will. </p>
+    <address>Together We'll Fight, Together We'll Win</address>
+  <a href="mailto: ncov2019@gov.in"  target="_blank"><i style="padding: 8px;" class="fas fa-paper-plane fa-lg" id="mail"></i>ncov2019@gov.in</a><br />
+  <i class="fas fa-phone-alt fa-lg" id="phone"></i> Helpline Number: +91-11-23978046<br />
+  <i class="fas fa-phone-alt fa-lg" id="phone"></i> Toll Free: 1075<br />
+
+  <a href="https://www.facebook.com/MoHFWIndia/" target="_blank"><i style="padding: 3px;"  class="fab fa-facebook fa-2x" id="fb" ></i></a>
+  <a href="https://www.youtube.com/user/mohfwindia" target="_blank"><i style="padding: 3px;" class="fab fa-youtube fa-2x" id="utube"></i></a>
+  <a href="https://twitter.com/MoHFW_INDIA" target="_blank"><i style="padding: 3px;" class="fab fa-twitter fa-2x" id="tweet"></i></a>
+  <a href="https://pib.gov.in/newsite/pmreleases.aspx?mincode=31" target="_blank"><i style="padding: 3px;" class="far fa-newspaper fa-2x" id="news"></i></a>
+
+</div>
+
+    <div class="forms contact col-lg-6  col-md-10 col-5">
+    <form action="contact.php" method="post">
+      <input type="text" placeholder="Your Name*" name="name" required>
+      <input type="text" placeholder="E-mail Id*" name="email" required><br>
+      <input type="text" placeholder="Mobile Number" name="mobile">
+      <input type="text" placeholder="Address" name="address"><br>
+      <input style="width: 63%" type="text" placeholder="Subject*" name="subject" required><br>
+      <textarea  cols="42" rows="4" placeholder="Type your message here...*" style="margin:6px;" name="message" required></textarea><br>
+      <button type="submit" class="btn btn-primary" id="sub" style="width:63%">Submit</button>
+      <!-- <div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Success!</strong>Your Info has been Successfully recieved. We'll Get back to you ASAP!
+      </div> -->
       
-        <a href="https://www.facebook.com/MoHFWIndia/" target="_blank"><i style="padding: 3px;"  class="fab fa-facebook fa-2x" id="fb" ></i></a>
-        <a href="https://www.youtube.com/user/mohfwindia" target="_blank"><i style="padding: 3px;" class="fab fa-youtube fa-2x" id="utube"></i></a>
-        <a href="https://twitter.com/MoHFW_INDIA" target="_blank"><i style="padding: 3px;" class="fab fa-twitter fa-2x" id="tweet"></i></a>
-        <a href="https://pib.gov.in/newsite/pmreleases.aspx?mincode=31" target="_blank"><i style="padding: 3px;" class="far fa-newspaper fa-2x" id="news"></i></a>
+    </form>
+  </div>
+  
+</div>
 
+
+<a style="float: right; font-size: 7vh; margin-right: 10px; color:#0d6efd" href="#home"><i class="fas fa-arrow-circle-up fa-sm"></i></a>
+<div style="text-align: center; height: 0vh; width: 90%; margin-left:5.5%;" id="footer">
+      <div class=" footer_style bg-primary text-white container-fluid text-center">
+        <p>&copy; Harsh Saxena | <a id="me" href="https://github.com/its-hrs" target="_blank"><i style="padding: 5px;" class="fab fa-github" id="github"></i></a>
+        <a href="https://www.facebook.com/PotterHead9347" target="_blank"><i style="padding: 5px" class="fab fa-facebook" id="fb" ></i></a>
+        <a href="https://twitter.com/Saxenaboy_123" target="_blank"><i style="padding: 5px;" class="fab fa-twitter" id="tweet"></i></a><br />All Rights Reserved | 2021-22</p>
       </div>
       
-          <div class="forms contact">
-          <form action="" method="get">
-            <input type="text" placeholder="Name...">
-            <input type="text" placeholder="E-mail"><br>
-            <input type="text" placeholder="Mobie No.">
-            <input type="text" placeholder="Address"><br>
-            <input style="width: 63%" type="text" placeholder="Subject...."><br>
-            <textarea  cols="42" rows="4" placeholder="Type your message here..." style="margin:6px;"></textarea><br>
-            <div id="liveAlertPlaceholder"></div>
-            <button type="button" class="btn btn-primary" id="liveAlertBtn" style="width:63%">Submit</button>  
-          </form>
-        </div>
-        
-      </div>
-      
-      
-      <a style="float: right; font-size: 7vh; margin-right: 10px; color:#0d6efd" href="#home"><i class="fas fa-arrow-circle-up fa-sm"></i></a>
-      <div style="text-align: center; height: 0vh; width: 90%; margin-left:5.5%;" id="footer">
-            <div class=" footer_style bg-primary text-white container-fluid text-center">
-              <p>&copy;Harsh Saxena | <a id="me" href="https://github.com/its-hrs" target="_blank"><i style="padding: 5px;" class="fab fa-github" id="github"></i></a> 
-              <a href="https://www.facebook.com/PotterHead9347" target="_blank"><i style="padding: 5px" class="fab fa-facebook" id="fb" ></i></a>
-              <a href="https://twitter.com/Saxenaboy_123" target="_blank"><i style="padding: 5px;" class="fab fa-twitter" id="tweet"></i></a><br />All Rights Reserved | 2021-22</p>
-            </div>
-            
-          </div>
-          <br>
+    </div>
+    <br>
 
-      <!-- ******************* Contact Page Ends *********************** -->
+<!-- ******************* Contact Page Ends *********************** -->
+
+     
 
       <script src="https://kit.fontawesome.com/aba415448e.js" crossorigin="anonymous"></script>
 
