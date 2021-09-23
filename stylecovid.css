@@ -17,10 +17,7 @@ html {
 
 .nav_style{ background-color: #0d6efd;  }
 
-.nav_style a{ color: white; }
-
 .main_header{
-    margin-top: -2%;
     height: 450px;
     margin-bottom: 4%;
 }
@@ -68,35 +65,31 @@ html {
  }
 
  .about_section button{
-     margin: 28px 0px 5px 40px;
+     margin: 20px 4px 0px 35px;
+     white-space: normal !important;
+     word-wrap: break-word;
      }
 
- .btn-group{
-     margin-left: 3%;
- }
-
- .flex-box-contact {
-    display: flex;
-    justify-content: space-around;
-  }
-
-.contact {
-    width: 50%;
-    font-size: 15px;
-    text-align: center;
-    line-height: 45px;
-    padding: 45px;
-}    
-  
-.contact i {
+#contact i {
     color: black;
   }
 
+.forms{
+    width: 100%;
+}
+
 .forms input {
     border: none;
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
-    
+    border-bottom: 2px solid black;
+    margin-bottom: 27px;
+    background: transparent;
+    margin-left: 8%;
+}
+
+.forms textarea {
+    background: transparent;
+    width: 220px;
+    margin-left:25px;
 }
   
 .forms input:hover {
@@ -155,3 +148,21 @@ html {
 #footer{
     background-color: #0d6efd;
 }
+
+#topbtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2px; 
+    right: 5px; 
+    z-index: 99; /* Make sure it does not overlap */
+    color:black;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 10px; 
+    border-radius: 30px;
+
+  }
+
+  #topbtn:hover{
+      color: darkblue;
+  }
