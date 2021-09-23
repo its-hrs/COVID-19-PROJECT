@@ -15,7 +15,7 @@
   </head>
 
 <body>
-  <nav class="navbar  navbar-expand-lg p-3 navbar-dark nav_style">
+  <nav class="navbar sticky-top navbar-expand-lg p-3 navbar-dark nav_style">
     <div class="container-fluid">
       <a class="navbar-brand" href="https://covid19.who.int/" target="_blank"><b>COVID-19</b></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,10 +37,10 @@
             <a class="nav-link" href="#prevention">Preventions</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
+            <a class="nav-link" href="#help">Help</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/Form19.html" target="_blank">Help</a>
+            <a class="nav-link" href="/contact.html" target="_blank">Contact Us</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -57,7 +57,7 @@
         <div class="row w-100 h-100 row_style">
           <div class="col-lg-5 col-md-5 col-12 order-lg-1 order-2 " >
             <div class="w-100 h-100 d-flex justify-content-center align-items-center eksath_anime">
-              <img src="img/eksath.svg" width="550" height="550" >
+              <img src="img/eksath.svg" width="450" height="450" >
             </div>
           </div>
           
@@ -89,10 +89,10 @@
             
           </div>
         </div>
-         <div class="btn-group text abt_btn col-lg-6  col-md-6 col-6" role="group" aria-label="Basic outlined example">
-          <a href="https://covid19.who.int/" target="_blank"><button type="button" class="btn btn-outline-primary">More About Covid</button></a>
-          <a href="https://www.unicef.org/coronavirus/covid-19" target="_blank"><button type="button" class="btn btn-outline-primary">Covid Info Center</button></a>
-          <a href="https://help.unicef.org/in/join-greta-fight-coronavirus" target="_blank"><button type="button" class="btn btn-outline-primary">Donate / Help </button></a>
+         <div class="btn-group text abt_btn text-center" role="group" aria-label="Basic outlined example">
+          <a href="https://covid19.who.int/" target="_blank"><button type="button" class="btn btn-primary">More About Covid</button></a>
+          <a href="https://www.unicef.org/coronavirus/covid-19" target="_blank"><button type="button" class="btn btn-primary">Covid Info Center</button></a>
+          <a href="https://help.unicef.org/in/join-greta-fight-coronavirus" target="_blank"><button type="button" class="btn btn-primary">Donate to Needy </button></a>
         </div>
         
       </div>
@@ -240,7 +240,7 @@
 
       <!-- ******************* Prevention Page Starts *********************** -->
 
-      <div class="container-fluid sub_section pt-5 pb-5" id="prevention" style="margin-top: -15%; background-color: #f1f0f1;">
+      <div class="container-fluid sub_section pt-5 pb-5" id="prevention" style="margin-top: -11%; background-color: #f1f0f1;">
         <!-- background-color: #8ccdf0;" -->
         <div class="section_header text-center mb-5 mt-4">
           <h1 class="text-capitalize" style="font-weight: bold;">Prevention steps against Coronavirus  </h1>
@@ -333,64 +333,95 @@
 
       <!-- ******************* Prevention Page Ends *********************** -->
 
-       <!-- ******************* Contact Page Starts *********************** -->
+       <!-- ******************* Help Form Starts *********************** -->
+        
+    <div class="container-fluid pb-5 pt-5" id="help">
+      <div class="section_header text-center mb-5 mt-4">
+        <h1 class="text-capitalize" style="font-weight: bold;"> Need Help ? Tell Us...  </h1>
+      </div>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 col-12"> 
+          <form  action="https://formspree.io/mpzjqbaa" method="POST">
+    
+           <div class="form-group">
+              <label >Name:</label>
+              <input type="text" class="form-control"  placeholder="Your Name" name="name">
+            </div>	
+    
+            <div class="form-group">
+              <label >Email address:</label>
+              <input type="email" class="form-control"  placeholder="name@example.com" name="email">
+            </div>
+    
+             <div class="form-group">
+              <label >Mobile Number:</label>
+              <input type="number" class="form-control"  placeholder="mobile number" name="mobile">
+            </div>
+    
+             <div class="form-group">
+              <label >Select Symptoms:</label> <br>
+    
+              <div class="custom-control custom-checkbox custom-control-inline text-capitalize">
+                <input type="checkbox" class="custom-control-input " id="customcheckbox1"    name="coronasym[]" value="cold">
+                <label class="custom-control-label" for="customcheckbox1">Cold</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline text-capitalize ">
+                <input type="checkbox" class="custom-control-input  "  id="customcheckbox2" name="coronasym[]" value="fever">
+                <label class="custom-control-label" for="customcheckbox2">Fever</label>
+              </div>
+    
+               <div class="custom-control custom-checkbox custom-control-inline text-capitalize ">
+                <input type="checkbox" class="custom-control-input  " id="customcheckbox3" name="coronasym[]" value="breath">
+                <label class="custom-control-label" for="customcheckbox3">Difficulty in breath</label>
+              </div>
+    
+               <div class="custom-control custom-checkbox custom-control-inline text-capitalize ">
+                <input type="checkbox" class="custom-control-input  " id="customcheckbox4" name="coronasym[]" value="tired">
+                <label class="custom-control-label" for="customcheckbox4">Feeling weak</label>
+              </div>
+    
+              <div class="custom-control custom-checkbox custom-control-inline text-capitalize ">
+                <input type="checkbox" class="custom-control-input  " id="customcheckbox4" name="coronasym[]" value="chestpain">
+                <label class="custom-control-label" for="customcheckbox5">Chest Pain or pressure</label>
+              </div>
+            </div>
+    
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Tell Us your present condition:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="msg"></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+      </form>
+        </div>
+      </div>
+    
+    </div>
+    
+    </div>
 
- <div class="container-fluid pt-5 pb-5" id="contact"> 
-  <!-- style="background-color: #84ceeb;" -->
-  <div class="section_header text-center mb-5 mt-4">
-    <h1 style="font-weight: bold;">Contact US: </h1>
-  </div>
-
-<div class="container5 flex-box-contact container-fluid sub_section pt-5 pb-5" style="margin-top: -5%;">
-  <div class="contact col-lg-6  col-md-5 col-5" >
-    <h1>Get In Touch:</h1>
-    <p>You only live once, but if you do it right, once is enough. Please be safe and don't panic at all and listen to facts not rumours and get vaccinated ASAP.<br> We can and we will. </p>
-    <address>Together We'll Fight, Together We'll Win</address>
-  <a href="mailto: ncov2019@gov.in"  target="_blank"><i style="padding: 8px;" class="fas fa-paper-plane fa-lg" id="mail"></i>ncov2019@gov.in</a><br />
-  <i class="fas fa-phone-alt fa-lg" id="phone"></i> Helpline Number: +91-11-23978046<br />
-  <i class="fas fa-phone-alt fa-lg" id="phone"></i> Toll Free: 1075<br />
-
-  <a href="https://www.facebook.com/MoHFWIndia/" target="_blank"><i style="padding: 3px;"  class="fab fa-facebook fa-2x" id="fb" ></i></a>
-  <a href="https://www.youtube.com/user/mohfwindia" target="_blank"><i style="padding: 3px;" class="fab fa-youtube fa-2x" id="utube"></i></a>
-  <a href="https://twitter.com/MoHFW_INDIA" target="_blank"><i style="padding: 3px;" class="fab fa-twitter fa-2x" id="tweet"></i></a>
-  <a href="https://pib.gov.in/newsite/pmreleases.aspx?mincode=31" target="_blank"><i style="padding: 3px;" class="far fa-newspaper fa-2x" id="news"></i></a>
-
-</div>
-
-    <div class="forms contact col-lg-6  col-md-10 col-5">
-    <form action="contact.php" method="post">
-      <input type="text" placeholder="Your Name*" name="name" required>
-      <input type="text" placeholder="E-mail Id*" name="email" required><br>
-      <input type="text" placeholder="Mobile Number" name="mobile">
-      <input type="text" placeholder="Address" name="address"><br>
-      <input style="width: 63%" type="text" placeholder="Subject*" name="subject" required><br>
-      <textarea  cols="42" rows="4" placeholder="Type your message here...*" style="margin:6px;" name="message" required></textarea><br>
-      <button type="submit" class="btn btn-primary" id="sub" style="width:63%">Submit</button>
-      <!-- <div class="alert alert-success alert-dismissible">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Success!</strong>Your Info has been Successfully recieved. We'll Get back to you ASAP!
-      </div> -->
-      
-    </form>
-  </div>
-  
-</div>
+      <!-- ******************* Help Form Page Ends *********************** -->
 
 
-<a style="float: right; font-size: 7vh; margin-right: 10px; color:#0d6efd" href="#home"><i class="fas fa-arrow-circle-up fa-sm"></i></a>
+      <!-- ******************* Footer Salutation *********************** -->
+
+    <div class="containter scrolltop float-right pr-5">
+      <i class="fas fa-arrow-circle-up"  onclick="topFunction()" id="topbtn" > </i> 
+    </div>
+    
+
 <div style="text-align: center; height: 0vh; width: 90%; margin-left:5.5%;" id="footer">
       <div class=" footer_style bg-primary text-white container-fluid text-center">
         <p>&copy; Harsh Saxena | <a id="me" href="https://github.com/its-hrs" target="_blank"><i style="padding: 5px;" class="fab fa-github" id="github"></i></a>
         <a href="https://www.facebook.com/PotterHead9347" target="_blank"><i style="padding: 5px" class="fab fa-facebook" id="fb" ></i></a>
         <a href="https://twitter.com/Saxenaboy_123" target="_blank"><i style="padding: 5px;" class="fab fa-twitter" id="tweet"></i></a><br />All Rights Reserved | 2021-22</p>
       </div>
+ 
       
     </div>
-    <br>
-
-<!-- ******************* Contact Page Ends *********************** -->
-
-     
+<!-- ******************* Footer Salutation *********************** -->
 
       <script src="https://kit.fontawesome.com/aba415448e.js" crossorigin="anonymous"></script>
 
@@ -411,6 +442,27 @@
         })
         }
       </script>
+
+      <!-- Top Button Function -->
+      <script>
+        btn = document.getElementById("topbtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btn.style.display = "block";
+        } else {
+        btn.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+      </script>
+      <!-- Top Button Function -->
 
       <!-- Customerly Live Chat Snippet Code -->
       <script>
